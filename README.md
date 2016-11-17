@@ -1,8 +1,3 @@
-# RTVE JS project
-
-## Description:
-Another amazing RTVE NodeJS project
-
 ## [Grunt]  
 grunt install  - Installs the dependencies of the module  
 grunt dev      - For development stuff [grunt install + dev]  
