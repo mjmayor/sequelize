@@ -1,12 +1,12 @@
 {
   "name": "node-module-sequelize",
   "distName": "sequelize",
-  "description": "Another amazing RTVE NodeJS project",
+  "description": "Another amazing NodeJS project",
   "projectType": "mod",
   "main": "dist/app.js",
   "author": {
     "name": "Manuel Jose Mayor Perez",
-    "email": "manuel.mayorperez@plexus.es"
+    "email": "mjmp.84@gmail.com"
   },
   "contributors": [],
   "version": "0.0.1",
