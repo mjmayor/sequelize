@@ -14,7 +14,11 @@ Execute script tablas.sql
 
 ## URL examples
 /modulos/sequelize/[profesores|alumnos|asignaturas]/: Get all
+
 /modulos/sequelize/[profesores|alumnos|asignaturas]/sql: Get all using a SQL native query
+
 /modulos/sequelize/[profesores|alumnos|asignaturas]/1: Get by id
+
 /modulos/sequelize/[profesores|alumnos|asignaturas]/sql/1: Get by id using a SQL native query
+
 /modulos/sequelize/[profesores|alumnos|asignaturas]/form: Form to add a new element to database
