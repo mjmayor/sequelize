@@ -1,0 +1,67 @@
+{
+  "name": "node-module-sequelize",
+  "distName": "sequelize",
+  "description": "Another amazing RTVE NodeJS project",
+  "projectType": "mod",
+  "main": "dist/app.js",
+  "author": {
+    "name": "Manuel Jose Mayor Perez",
+    "email": "manuel.mayorperez@plexus.es"
+  },
+  "contributors": [],
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "engines": [
+    "node >= 0.8.0"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {},
+  "dependencies": {
+    "async": "^0.9.0",
+    "express": "^4.9.5",
+    "mysql": "^2.9.0",
+    "node-common": "^0.1.5",
+    "path": "^0.4.9",
+    "sequelize": "^3.13.0",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "fs-extra": "^0.12.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jasmine": "^0.8.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-processhtml": "^0.3.3",
+    "grunt-exec": "^0.4.6",
+    "grunt-express-server": "^0.4.19",
+    "grunt-filerev": "^2.1.1",
+    "grunt-jasmine-node": "^0.2.1",
+    "grunt-karma": "^0.9.0",
+    "grunt-newer": "^0.7.0",
+    "grunt-requirejs": "^0.4.2",
+    "grunt-rtve-manager": "^0.4.0",
+    "grunt-rtve-packager": "^0.5.4",
+    "grunt-uncss": "^0.3.7",
+    "grunt-usemin": "^2.6.0",
+    "karma": "^0.12.24",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-firefox-launcher": "~0.1.3",
+    "karma-ie-launcher": "~0.1",
+    "karma-jasmine": "~0.2.0",
+    "karma-jasmine-html-reporter": "~0.1",
+    "karma-phantomjs-launcher": "~0.1",
+    "karma-requirejs": "^0.2.2",
+    "node-properties": "^0.4.0",
+    "ssi_resolver": "^0.0.5",
+    "commons": "*"
+  }
+}

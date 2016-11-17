@@ -1,0 +1,27 @@
+<h1>Listado de asignaturas (datos obtenidos a traves del model)</h1>
+<div>
+	{% if res.length > 0 %}
+		<ul class="resultList">
+			{% for item in res %}
+				<li>
+					<div><b>Nombre:</b> {{item.nombre}}</div>
+					<div><b>Curso:</b> {{item.curso}}</div>
+					<div><b>Créditos:</b> {{item.creditos}}</div>
+					<div><b>Profesor:</b> {{item.profesor.nombre}} {{item.profesor.apellidos}}</div>
+					<div><b>Alumnos</b></div>
+					<ul>
+						{% for alumno in item.alumnos %}
+							<li>
+								<div><b>DNI:</b> {{alumno.dni}}</div>
+								<div><b>Nombre:</b> {{alumno.nombre}} {{alumno.apellidos}}</div>
+							</li>
+						{% endfor %}
+					</ul>
+				</li>
+				</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No hay resultados</p>
+	{% endif %}
+</div>

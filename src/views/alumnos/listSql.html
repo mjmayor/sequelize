@@ -1,0 +1,17 @@
+<h1>Listado de alumnos (datos obtenidos por query SQL)</h1>
+<div>
+	{% if res.length > 0 %}
+		<ul class="resultList">
+			{% for item in res %}
+				<li>
+					<div><b>DNI:</b> {{item.dni}}</div>
+					<div><b>Nombre:</b> {{item.nombre}}</div>
+					<div><b>Apellidos:</b> {{item.apellidos}}</div>
+					<div><b>e-mail:</b> {{item.email}}</div>
+				</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No hay resultados</p>
+	{% endif %}
+</div>

@@ -1,0 +1,101 @@
+{% set body_class = 'p_final' %}
+{% extends 'layout/base.html' %}
+{% block title %}
+  <title>Módulo sequelize</title>
+{% endblock %}
+
+{% block header %}
+  <div class="wrapper fixer mainheader">
+ <header class="container" role="banner">
+      <div class="navBox">
+
+        <nav class="blindBox" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+          <ul class="maintabs">
+            <li class="tab_first">
+              <span class="ico logo beoff be_on">
+						<a href="http://www.rtve.es/" title="Portada de RTVE.es">
+							<img alt="Portada de RTVE.es" src="http://img.irtve.es/css/rtve.commons/rtve.header.footer/i/logoRTVEes.png" />
+							<span class="tabH1">Portada de RTVE.es</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_infor">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/" title="Noticias">
+							<img alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">Noticias</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_telev">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/television/" title="Televisión">
+							<img class="ico" alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">Televisión</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_radio">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/radio/" title="Radio">
+							<img class="ico" alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">Radio</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_sport">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/deportes/" title="Deportes">
+							<img class="ico" alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">Deportes</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_child">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/infantil/" title="Infantil">
+							<img class="ico" alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">Infantil</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_carta">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/alacarta/" title="A la carta">
+							<img class="ico" alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">A la carta</span>
+              </a>
+              </span>
+            </li>
+            <li class="tab_weath">
+              <span class="ico brows beoff">
+						<a href="http://www.rtve.es/eltiempo/" title="El Tiempo">
+							<img class="ico" alt="" src="http://img.irtve.es/css/i/blank.gif" />
+							<span class="tabH1">El Tiempo</span>
+              </a>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+{% endblock %}
+
+
+{% block container %}
+  <div class="container">
+    <section class="grid">
+      <div class="gridBox ">
+      <!-- Content -->
+      <!-- #include virtual="{{content|raw}}" -->
+      <!-- End Content -->
+      </div>
+    </section>
+  </div>
+{% endblock %}
+
+{% block js %}
+  <!-- Load js at the end -->
+    <script data-main="/js/init_sequelize" src="/js/vendor/require.js" ></script>
+{% endblock %}

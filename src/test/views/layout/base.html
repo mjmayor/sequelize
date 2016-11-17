@@ -1,0 +1,73 @@
+{% extends "./layout.html" %}
+
+{% block metas %}
+  {% block title %}
+    <title>Página final</title>
+  {% endblock %}
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+{% endblock %}
+
+{% block css %}
+ <link media="all" rel="stylesheet" href="{{cssUrl}}/css/rtve.2015/rtve.compacts/{{body_class}}.{{device|default('desktp')}}.css" type="text/css" />
+{% endblock %}
+
+{% block header %}
+  <!-- Content -->
+    <!--#include virtual="/modulos/cabecera{{querystring}}"-->
+  <!-- End Content -->
+{% endblock %}
+
+{% block auxheader %}
+  <div class="wrapper fixer auxheader">
+    <!--navegacin auxiliar-->
+    <div class="container">
+
+      <span class="ico arrow back_">
+		<a href="/prev/">
+			<img src="http://img.irtve.es/css/i/blank.gif" alt="xxxxx" />
+		</a>
+	</span>
+      <span class="ico arrow next_">
+		<a href="/prev/">
+			<img src="http://img.irtve.es/css/i/blank.gif" alt="xxxxx" />
+		</a>
+	</span>
+
+      <span class="ico arrow above">
+		<a href="#topPage" title="Ir a principio de página">
+			<img alt="arriba" src="http://img.irtve.es/css/i/blank.gif" />
+		</a>
+	</span>
+
+      <ul class="services">
+        <li>
+          <span>
+					<a href="/usuarios/">
+						<img alt="usuarios" src="http://img.irtve.es/css/i/blank.gif" />
+					</a>
+				</span>
+          <div></div>
+        </li>
+        <li>
+          <span class="ico seekr search">
+					<a href="/buscador/">
+						<img alt="búsqueda" src="http://img.irtve.es/css/i/blank.gif" />
+					</a>
+				</span>
+          <div></div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+{% endblock %}
+
+{% block js %}
+  <!-- build:template
+      <script data-main="/pages/<%= distName %>/<%= version %>/js/{{init_js}}" src="/pages/<%= distName %>/<%= version %>/js/vendor/require.js" ></script>
+    /build -->
+  <!-- build:remove:dist /js/init_pfPhotogallery -->
+  <script data-main="/js/{{init_js}}" src="/js/vendor/require.js"></script>
+  <!-- /build -->
+{% endblock %}

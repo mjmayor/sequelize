@@ -1,0 +1,14 @@
+<h1>Nuevo alumno</h1>
+<form action="/modulos/sequelize/alumnos/add" method="get">
+	<p><label>DNI*</label></p><input type="text" name="dni" />
+	<p><label>Nombre*</label></p><input type="text" name="nombre" />
+	<p><label>Apellidos*</label></p><input type="text" name="apellidos" />
+	<p><label>Fecha de nacimiento*</label></p><input type="text" name="fechaNacimiento" />
+	<p><label>e-mail</label></p><input type="text" name="email" />
+	<p>Asignaturas</p>
+	{% for asignatura in res.asignaturas %}
+		<p><label><input type="checkbox" name="asignaturas" value="{{asignatura.id}}">{{asignatura.nombre}}</label></p>
+	{% endfor %}
+
+	<input type="submit" value="Enviar"/>
+</form>
